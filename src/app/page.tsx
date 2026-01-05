@@ -152,7 +152,7 @@ const backEnd = [
         iconClass: "devicon-php-plain"
     },
     {
-        name: "Spring Tool Suite",
+        name: "Spring Suite",
         src: "/assets/images/homepage/icons/spring-tool-suite.png", // Placeholder
         iconClass: "devicon-spring-plain" // Closest relevant icon for Spring generally
     },
@@ -160,12 +160,7 @@ const backEnd = [
         name: "RESTful APIs",
         src: "/assets/images/homepage/icons/rest-api.png", // Placeholder
         iconClass: "devicon-moleculer-plain" // No direct 'REST' icon, often associated with tools like Postman but for general API concept
-    },
-    {
-        name: "SOAP",
-        src: "/assets/images/homepage/icons/soap.png", // Placeholder
-        iconClass: "devicon-xml-plain" // No widely available standard icon for SOAP
-    },
+    }
 ];
 
 
@@ -191,7 +186,7 @@ const developmentToolsPlatforms = [
         iconClass: "" // No widely available standard icon for ServiceNow
     },
     {
-        name: "Google Tool Suite",
+        name: "Google Suite",
         src: "/assets/images/homepage/icons/google-suite.png", // Placeholder
         iconClass: "devicon-google-plain" // General Google icon
     },

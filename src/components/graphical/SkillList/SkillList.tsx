@@ -34,7 +34,7 @@ export default function SkillList({skills, icons = true} : SkillListProps) {
                         whileInView={{ scale: 1, opacity: 1, translateY: 0 }}
                     >
                         {(icons && (skill.iconClass)) ? (<i className={"icons mx-auto mt-1 justify-center align-middle " + skill.iconClass}></i>) : null}
-                        <h2 className={"text-lg text-nowrap w-full " + (icons && skill.iconClass ? "max-w-4/5" : (" max-w-full text-center"))}>{skill.name}</h2>
+                        <h3 className={" text-4xl text-nowrap w-full " + (icons && skill.iconClass ? "max-w-4/5" : (" max-w-full text-center"))}>{skill.name}</h3>
                     </motion.div>
                 ))}
 
