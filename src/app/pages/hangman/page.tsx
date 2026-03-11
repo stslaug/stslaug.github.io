@@ -862,11 +862,11 @@ export default function Hangman() {
   const [currGuess, setCurrGuess] = useState("");
   const [maxGuesses, setMaxGuesses] = useState(8);
   const [currDisplayWord, setCurrDisplayWord] = useState("");
-  function replaceAt(str, index, replacement) {
+  function replaceAt(str: string, index: number, replacement: string) {
     //helpful function to replace a character at a specific index
     return str.substring(0, index) + replacement + str.substring(index + 1);
   }
-  function handleGuess(letter) {
+  function handleGuess(letter: string) {
     if (currGuess.includes(letter)) return;
     if (!currWord.toUpperCase().includes(letter.toUpperCase())) {
       setGuesses(guesses + 1);
