@@ -15,6 +15,10 @@ const projects = [
     {
         name: "Card Database",
         to: "/MTG-Card-Finder"
+    },
+    {
+        name: "Hangman",
+        to: "/pages/hangman"
     }
 ]
 
