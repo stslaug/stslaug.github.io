@@ -280,7 +280,9 @@ export default function Experience() {
             <section id="ally" className={"snap-center mb-10"}>
               <span className="text-2xl flex">
                 <strong className="mr-auto">Software Developer Intern </strong>
-                <strong className="text-right ml-auto">Ally Financial (Charlotte, NC)</strong>
+                <strong className="text-right ml-auto">
+                  Ally Financial (Charlotte, NC)
+                </strong>
                 {/* TODO Make style more consistent with other experience */}
               </span>
               <h5 className="title text-center text-gray-500 ">
@@ -331,15 +333,18 @@ export default function Experience() {
             </section>
 
             <section id="clemson" className={" mb-5"}>
-            <span className="text-2xl flex">
-                <strong className="mr-auto">Residential Community Leader</strong>
-                <strong className="text-right ml-auto">Clemson Home (Clemson, SC)</strong>
+              <span className="text-2xl flex">
+                <strong className="mr-auto">
+                  Residential Community Leader
+                </strong>
+                <strong className="text-right ml-auto">
+                  Clemson Home (Clemson, SC)
+                </strong>
                 {/* TODO Make style more consistent with other experience */}
               </span>
-        
-            
+
               <h5 className="title text-center text-gray-500 ">
-             Jan 2021 - Dec 2024
+                Jan 2021 - Dec 2024
               </h5>
               <Separator className={"mb-2"} />
               <ul>
@@ -353,12 +358,11 @@ export default function Experience() {
                 </li>
               </ul>
               <h5 className="title text-center text-gray-500 ">
-              Promoted From Resident Assistant | May 2023 - Aug 2023
+                Promoted From Resident Assistant | May 2023 - Aug 2023
               </h5>
               <Separator className={"mb-2"} />
-                
+
               <ul>
-                
                 <li>
                   Oversaw facility access and fielded resident inquiries via
                   phone support.
