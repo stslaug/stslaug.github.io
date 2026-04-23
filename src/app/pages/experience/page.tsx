@@ -426,7 +426,7 @@ export default function Experience() {
                   {project.fileToDownload ? 
                   (<p><strong className="mr-2">Extra Files:</strong> <Link
                     aria-label={"Download " + project.fileToDownloadText + " PDF"}
-                    download="Resume_SSlaughter.pdf"
+                    download={project.fileToDownloadText + ".pdf"}
                     href={project.fileToDownload}
                     className={"text-blue-500 hover:text-blue-700 underline underline-offset-3"}
                   >{project.fileToDownloadText + " PDF "}
