@@ -34,8 +34,8 @@ export default function RootLayout({
                 <meta content = "ie=edge" httpEquiv = "X-UA-Compatible"/>
                 <link crossOrigin = "anonymous" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity = "sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" referrerPolicy = "no-referrer" rel = "stylesheet"/>
                 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-
-
+                <meta name="title" property="og:title" content="Portfolio | Sean Slaughter"></meta>
+                <meta name="author" property="og:author" content="Sean Slaughter @ stslaug@gmail.com"></meta>
             </head>
             <body className = {`${notoSans.variable} ${notoMono.variable} antialiased`}
             >
