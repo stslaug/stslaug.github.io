@@ -12,17 +12,29 @@ export default function Experience() {
   const projects = [
     {
       name: "Magical Gardening Game",
-      to: "/pages/group/zipcode/zipcode.html",
+      to: "https://youtu.be/1lcSHhMd9Ko",
       lang: ["C#"],
       tech: ["Unity", "Git"],
       type: "Team",
       date: "Dec 2024",
+      fileToDownload: "/assets/files/GameDesignDocument.pdf",
+      fileToDownloadText: "Game Design Document",
       description:
         "Created a 2D, cozy, high-fantasy, garden-themed game. Implemented core gameplay in C#, integrated assets in Unity, and collaborated on art, music, and story.",
     },
     {
+      name: "Card Database",
+      to: "https://www.seanslaughter.dev/MTG-Card-Finder/",
+      lang: ["PHP", "JavaScript", "HTML", "CSS", "MySQL"],
+      tech: ["Scryfall API", "Git"],
+      type: "Solo",
+      date: "May 2025",
+      description:
+        "A web application that allows users to create, view, and manage their own card databases. The application provides a user-friendly interface for creating and managing cards, as well as displaying them in a visually appealing manner. The application also includes features for searching and sorting cards, as well as exporting data to various formats.",
+    },
+    {
       name: "Most Likely To",
-      to: "/pages/project/Project/index.php",
+      to: "https://youtu.be/2JAO4svGYz4",
       tech: [],
       lang: ["PHP", "JQuery", "HTML", "CSS", "MySQL"],
       type: "Team",
@@ -32,7 +44,7 @@ export default function Experience() {
     },
     {
       name: "Driving Rewards Web App",
-      to: "/pages/project/DrivingRewards/index.html",
+      to: "",
       lang: ["JavaScript", "HTML", "CSS", "MySQL"],
       tech: ["React.js", "AWS", "Ebay API", "Git"],
       type: "Team",
@@ -41,18 +53,8 @@ export default function Experience() {
         "Web platform for organizations to award users points for eBay items. Implemented AWS-backed authentication, secure ordering, and scalable infrastructure.",
     },
     {
-      name: "Card Database",
-      to: "/pages/project/Card-Database/card-home.php",
-      lang: ["PHP", "JavaScript", "HTML", "CSS", "MySQL"],
-      tech: ["Scryfall API", "Git"],
-      type: "Solo",
-      date: "May 2025",
-      description:
-        "A web application that allows users to create, view, and manage their own card databases. The application provides a user-friendly interface for creating and managing cards, as well as displaying them in a visually appealing manner. The application also includes features for searching and sorting cards, as well as exporting data to various formats.",
-    },
-    {
       name: "Cute vs. Creepy - Eye Tracking Research",
-      to: "/pages/project/EyeTracking/index.html",
+      to: "",
       lang: ["Python"],
       tech: ["PsychoPy", "Git"],
       type: "Solo",
@@ -62,9 +64,9 @@ export default function Experience() {
     },
     {
       name: "Zipcode Finder",
-      to: "/pages/group/zipcode/zipcode.html",
+      to: "",
       tech: ["Leaflet API"],
-      lang: ["JavaScript", "HTML", "CSS"],
+      lang: ["JavaScript", "HTML", "CSS", "PHP"],
       type: "Team",
       date: "Feb 2025",
       description:
@@ -72,7 +74,7 @@ export default function Experience() {
     },
     {
       name: "Sort Demo",
-      to: "/pages/solo/Sort/sort.html",
+      to: "",
       tech: [],
       lang: ["JavaScript", "HTML", "CSS", "MySQL"],
       type: "Solo",
@@ -236,7 +238,6 @@ export default function Experience() {
       </motion.div>
 
       <main className="inline-block pl-10 pr-10 sm:pl-20 sm:pr-20 max-w-full md:max-w-3/5 w-full sm:ml-10 snap-proximity snap-y">
-        <div className="">
           <h2>Education</h2>
           <Separator className={"mb-2"} />
           <section className="section-wrap snap-center" id="education">
@@ -393,7 +394,7 @@ export default function Experience() {
           <section className="section-wrap snap-center" id="projects">
             {projects.map((project, index) => (
               <div key={index} className="mb-2">
-                <h3>{project.name}</h3>
+                {project.to ? (<Link className=" underline-offset-4 underline" href={project.to}><h3>{project.name}  ➜</h3></Link>) : (<h3>{project.name}</h3>) }
                 <p>
                   {project.type} Project ({project.date})
                 </p>
@@ -422,11 +423,20 @@ export default function Experience() {
                     <strong className="mr-2">Description:</strong>{" "}
                     {project.description}
                   </p>
+                  {project.fileToDownload ? 
+                  (<p><strong className="mr-2">Extra Files:</strong> <Link
+                    aria-label={"Download " + project.fileToDownloadText + " PDF"}
+                    download="Resume_SSlaughter.pdf"
+                    href={project.fileToDownload}
+                    className={"text-blue-500 hover:text-blue-700 underline underline-offset-3"}
+                  >{project.fileToDownloadText + " PDF "}
+                    <i className="fa-lg fa-solid fa-download"></i>
+                  </Link></p>) : null}
                 </div>
               </div>
             ))}
           </section>
-        </div>
+        
       </main>
       {/*TODO: Add back in project section Once Implemented focus on working site*/}
       {/*<div className = "flex flex-col relative mx-auto w-1/5 h-min rounded-lg justify-right">*/}
