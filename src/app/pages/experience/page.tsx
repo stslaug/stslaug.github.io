@@ -11,6 +11,36 @@ import headshot_sqr from "../../../../public/assets/images/homepage/headshot_sqr
 export default function Experience() {
   const projects = [
     {
+      name: "TRPG Digital Character Sheet -", 
+      to: "https://www.seanslaughter.dev/ADnD2ECharacters/",
+      lang: ["TypeScript"],
+      tech: ["Next.js", "TailwindCSS", "React.js"],
+      type: "Solo",
+      date: "May 2026", 
+      description:
+        "Digital Character Sheet for Advanced Dungeons and Dragons 2nd Edition.  Has saved states, highly customizable fields, and importing/exporting to JSON.",
+    },
+    {
+      name: "Card Database",
+      to: "https://www.seanslaughter.dev/MTG-Card-Finder/",
+      lang: ["React.js"],
+      tech: ["Scryfall API", "TailwindCSS"],
+      type: "Solo",
+      date: "May 2025",
+      description:
+        "A web application that allows users to create, view, and manage their own card databases. The application provides a user-friendly interface for creating and managing cards, as well as displaying them in a visually appealing manner. The application also includes features for searching and sorting cards, as well as exporting data to various formats.",
+    },
+    {
+      name: "Most Likely To",
+      to: "https://youtu.be/2JAO4svGYz4",
+      tech: ["MySQL"],
+      lang: ["PHP", "JQuery", "HTML", "CSS"],
+      type: "Team",
+      date: "May 2025",
+      description:
+        "Developed a question and answer platform for friends to vote on the most likely to do the given statments. ",
+    },
+    {
       name: "Magical Gardening Game",
       to: "https://youtu.be/1lcSHhMd9Ko",
       lang: ["C#"],
@@ -21,26 +51,6 @@ export default function Experience() {
       fileToDownloadText: "Game Design Document",
       description:
         "Created a 2D, cozy, high-fantasy, garden-themed game. Implemented core gameplay in C#, integrated assets in Unity, and collaborated on art, music, and story.",
-    },
-    {
-      name: "Card Database",
-      to: "https://www.seanslaughter.dev/MTG-Card-Finder/",
-      lang: ["PHP", "JavaScript", "HTML", "CSS", "MySQL"],
-      tech: ["Scryfall API", "Git"],
-      type: "Solo",
-      date: "May 2025",
-      description:
-        "A web application that allows users to create, view, and manage their own card databases. The application provides a user-friendly interface for creating and managing cards, as well as displaying them in a visually appealing manner. The application also includes features for searching and sorting cards, as well as exporting data to various formats.",
-    },
-    {
-      name: "Most Likely To",
-      to: "https://youtu.be/2JAO4svGYz4",
-      tech: [],
-      lang: ["PHP", "JQuery", "HTML", "CSS", "MySQL"],
-      type: "Team",
-      date: "May 2025",
-      description:
-        "Developed a question and answer platform for friends to vote on the most likely to do the given statments. ",
     },
     {
       name: "Driving Rewards Web App",
