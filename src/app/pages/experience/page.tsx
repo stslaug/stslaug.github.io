@@ -154,7 +154,7 @@ export default function Experience() {
                   <Link
                     aria-label="Download Resume PDF"
                     download="Resume_SSlaughter.pdf"
-                    href="/assets/files/Resume.pdf"
+                    href="/assets/files/Resume_2_23_2026.pdf"
                   >
                     <i className="fa-xl fa-solid fa-download"></i>
                   </Link>
