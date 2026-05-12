@@ -11,7 +11,7 @@ import headshot_sqr from "../../../../public/assets/images/homepage/headshot_sqr
 export default function Experience() {
   const projects = [
     {
-      name: "TTRPG Digital Character Sheet -", 
+      name: "TTRPG Digital Character Sheet", 
       to: "https://www.seanslaughter.dev/ADnD2ECharacters/",
       lang: ["TypeScript"],
       tech: ["Next.js", "TailwindCSS", "React.js"],
